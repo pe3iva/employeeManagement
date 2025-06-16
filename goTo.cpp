@@ -22,11 +22,3 @@ int goTo(int destination) {
 	return destination;
 }
 
-std::string goBack(std::string destination) {
-
-	if (destination == "back") {
-		main();
-	}
-
-	return destination;
-}

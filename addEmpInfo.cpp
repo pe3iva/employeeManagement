@@ -29,7 +29,10 @@ void addEmployeeInfo() {
 		std::cout << "You can exit by typing back, type anything else to continue: ";
 		std::cin >> back;
 
-		goBack(back);
+		if (back == "back") {
+			return;
+		}
+		
 
 	} while (back != "back");
 	
