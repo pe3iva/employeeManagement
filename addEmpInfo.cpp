@@ -1,9 +1,10 @@
 #include "addEmpInfo.h"
+#include "goTo.h"
 #include <iostream>
 
 void addEmployeeInfo() {
 
-	std::string goBack{};
+	std::string back{};
 
 	do {
 		std::cout << "Employee name: ";
@@ -21,8 +22,12 @@ void addEmployeeInfo() {
 		std::cout << "\n\nCreated new employee information card.\n\n\n";
 
 		std::cout << "You can exit by typing back, type anything else to continue: ";
-		std::cin >> goBack;
+		std::cin >> back;
 
-	} while (goBack != "back");
+		if (back == "back") {
+			goBack(back);
+		}
+
+	} while (back != "back");
 	
 }

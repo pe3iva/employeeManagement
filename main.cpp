@@ -1,4 +1,5 @@
 #include "goTo.h"
+#include "main.h"
 #include <iostream>
 
 int main() {

@@ -20,3 +20,12 @@ int goTo(int destination) {
 
 	return destination;
 }
+
+std::string goBack(std::string destination) {
+
+	if (destination == "back") {
+		#include "main.h"
+	}
+
+	return destination;
+}
