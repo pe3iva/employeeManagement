@@ -1,5 +1,6 @@
 #include "goTo.h"
 #include "addEmpInfo.h"
+#include "main.h"
 #include <iostream>
 
 int goTo(int destination) {
@@ -24,7 +25,7 @@ int goTo(int destination) {
 std::string goBack(std::string destination) {
 
 	if (destination == "back") {
-		#include "main.h"
+		main();
 	}
 
 	return destination;

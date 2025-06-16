@@ -6,23 +6,23 @@ int main() {
 
 	std::cout << "Welcome to employee management app!\n\n";
 
-	std::cout << "Enter an username: ";
+	std::cout << "Enter username: ";
 	std::string username{};
 	std::cin >> username;
 
 	std::cout << '\n' << '\n';
 
-	std::cout << "Enter a password: ";
+	std::cout << "Enter password: ";
 	std::string password{};
 	std::cin >> password;
 
-	do {
+	while (password.length() < 5) {
 
 		std::cout << "Your password must be at least 5 characthers long.\n";
 		std::cout << "Enter a password: ";
 		std::cin >> password;
 
-	} while (password.length() < 5);
+	}
 
 	std::cout << "\n\n\nWelcome, " << username << "!\n\n";
 
