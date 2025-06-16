@@ -7,7 +7,7 @@ void addEmployeeInfo() {
 	std::string back{};
 
 	do {
-		std::cout << "Employee name: ";
+		std::cout << "\nEmployee name: ";
 		std::string employeeName{};
 		std::cin >> employeeName;
 
@@ -21,12 +21,15 @@ void addEmployeeInfo() {
 
 		std::cout << "\n\nCreated new employee information card.\n\n\n";
 
+		// display the inputed content
+		std::cout << "Employee name: " << employeeName << '\n';
+		std::cout << "Employee age: " << employeeAge << '\n';
+		std::cout << "Employee role: " << employeeRole << '\n' << '\n';
+
 		std::cout << "You can exit by typing back, type anything else to continue: ";
 		std::cin >> back;
 
-		if (back == "back") {
-			goBack(back);
-		}
+		goBack(back);
 
 	} while (back != "back");
 	

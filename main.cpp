@@ -26,15 +26,18 @@ int main() {
 
 	std::cout << "\n\n\nWelcome, " << username << "!\n\n";
 
-	std::cout << "Choose where to go: \n\n\n";
-
-	std::cout << "1. Add employee information\n";
-	std::cout << "2. Delete employee information\n";
-	std::cout << "3. Amend employee information\n\n";
-
 	int destination{};
-	std::cin >> destination;
+	do {
+		std::cout << "Choose where to go: \n\n\n";
 
-	goTo(destination);
+		std::cout << "1. Add employee information\n";
+		std::cout << "2. Delete employee information\n";
+		std::cout << "3. Amend employee information\n\n";
+
+		
+		std::cin >> destination;
+
+		goTo(destination);
+	} while (destination != 1, destination != 2, destination != 3);
 
 }
