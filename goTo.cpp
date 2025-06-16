@@ -1,10 +1,12 @@
 #include "goTo.h"
+#include "addEmpInfo.h"
 #include <iostream>
 
 int goTo(int destination) {
 
 	if (destination == 1) {
-		std::cout << "1";
+		addEmployeeInfo();
+
 	}
 	else if (destination == 2) {
 		std::cout << "2";
