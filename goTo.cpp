@@ -1,6 +1,5 @@
 #include "goTo.h"
 #include "addEmpInfo.h"
-#include "main.h"
 #include <iostream>
 
 int goTo(int destination) {

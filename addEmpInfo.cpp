@@ -30,10 +30,11 @@ void addEmployeeInfo() {
 		std::cin >> back;
 
 		if (back == "back") {
-			return;
+			break;
 		}
 		
 
-	} while (back != "back");
+	} while (true);
 	
+	return;
 }
